@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: similarity-search-api
+    ports:
+      - "8003:8003"
+    environment:
+      - ENV_FILE=.env
+    volumes:
+      - ./src:/src
+    command: uvicorn api:app --host 0.0.0.0 --port 8003
