@@ -16,8 +16,8 @@ The system supports cold-start functionality to load input data during startup a
 ### Local Setup
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git clone git@github.com:NEkropo1/similarity_search_api.git
+   cd similarity_search_api
    ```
 
 2. **Set up a Python environment (optional but recommended):**
@@ -45,8 +45,8 @@ The system supports cold-start functionality to load input data during startup a
    This command will start the service on http://localhost:8003.
 
 ### Docker Setup
-Docker already have to be installed follow your system guide from official website: https://www.docker.com/get-started/
-
+Docker must be installed. Follow the official guide for your system:
+https://www.docker.com/get-started
 1. **Build and run the service using Docker Compose:**
 
     ```bash
