@@ -193,3 +193,5 @@ pip-selfcheck.json
 .env
 .env_local
 .env_develop
+.idea
+.idea/
