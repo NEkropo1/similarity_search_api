@@ -101,6 +101,6 @@ Uploaded files are saved to the `input/` directory defined in `CONFIG['INPUT_PAT
 | `COLD_START`         | `True`                                          | Whether to initialize vector DB with files at startup    |
 | `VECTOR_DB_PATH`     | `vector_db/index.faiss`                         | Path to the vector database                              |
 | `EMBEDDING_MODEL`    | `sentence-transformers/all-MiniLM-L6-v2`        | Model for embedding generation                           |
-| `BEST_K_ELEMENTS`    | `7`                                             | Number of top results to return for search queries       |
+| `BEST_K_ELEMENTS`    | `3`                                             | Number of top results to return for search queries       |
 | `CHUNK_SIZE`         | `320`                                           | Size of chunks for embedding input                      |
 ```
