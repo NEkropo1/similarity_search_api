@@ -20,25 +20,37 @@ The system supports cold-start functionality to load input data during startup a
    cd similarity_search_api
    ```
 
-2. **Set up a Python environment (optional but recommended):**  
-   You should ensure using python3.11 for this project
+2. **Install Python 3.11 (if not already installed):**
+- On Ubuntu:
    ```bash
-   python -m venv venv  # or python3.11/python3@11, depends on your packaging tool
+   sudo apt update
+   sudo apt install -y python3.11 python3.11-venv
+   ```
+- On MacOS:
+   ```bash
+   brew install python@3.11
+   ```
+- On Windows, download and install from [Python.org](https://www.python.org/downloads/release/python-31110/)
+
+3. **Set up a Python 3.11 environment (optional but recommended):**  
+   Ensure python3.11 is available and create a virtual environment with it:
+   ```bash
+   python3.11 -m venv venv  # or python3.11/python3@11, depends on your packaging tool
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Install Dependencies:**
+4. **Install Dependencies:**
    ```bash
    make install
    ```
    
-4. **Create and configure the .env file (or set environment variables directly):**
+5. **Create and configure the .env file (or set environment variables directly):**
    ```bash
    cp .env.example ./src/.env  # for docker use: cp .env.example .env
    ```
    Although you can configure everything in config.py, it's not recommended.  
 
-5. **Run the service locally:**
+6. **Run the service locally:**
    ```bash
    make run
    ```
