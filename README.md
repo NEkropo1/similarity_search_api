@@ -20,9 +20,10 @@ The system supports cold-start functionality to load input data during startup a
    cd similarity_search_api
    ```
 
-2. **Set up a Python environment (optional but recommended):**
+2. **Set up a Python environment (optional but recommended):**  
+   You should ensure using python3.11 for this project
    ```bash
-   python -m venv venv
+   python -m venv venv  # or python3.11/python3@11, depends on your packaging tool
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
@@ -33,7 +34,7 @@ The system supports cold-start functionality to load input data during startup a
    
 4. **Create and configure the .env file (or set environment variables directly):**
    ```bash
-   cp .env.example .env
+   cp .env.example ./src/.env  # for docker use: cp .env.example .env
    ```
    Although you can configure everything in config.py, it's not recommended.  
 

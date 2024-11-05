@@ -22,7 +22,7 @@ service_clear:
 
 # Run the application locally with Uvicorn and load environment variables from .env
 run:
-	uvicorn api:app --host 0.0.0.0 --port 8003 --env-file .env
+	cd src; uvicorn api:app --host 0.0.0.0 --port 8003 --env-file .env
 
 # Run tests with pytest, currently not realised
 test:
